@@ -44,4 +44,5 @@ imagesList.style.cssText = `
 display: flex;
 flex-wrap: wrap;
 gap: 16px;
+list-style-type: none;
 `
