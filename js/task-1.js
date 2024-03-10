@@ -15,5 +15,3 @@ function showElement(element) {
     console.log(`Category: ${element.querySelector('h2').textContent}`);
     console.log(`Elements: ${element.querySelectorAll('.item li').length}`);
 }
-
-// console.log(elemItem.length * 10);

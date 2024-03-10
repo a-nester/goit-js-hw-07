@@ -36,9 +36,13 @@ const markup = images
   </li>`;
 })
 .join("");
-console.log(markup);
 imagesList.innerHTML = markup;
-console.log(imagesList);
+
+// console.log(imagesList.style);
+// imagesList.style.display = "flex";
+// imagesList.style.flexWrap = "wrap";
+// imagesList.style.listStyleType = "none";
+// imagesList.style.gap = "16px";
 
 imagesList.style.cssText = `
 display: flex;
