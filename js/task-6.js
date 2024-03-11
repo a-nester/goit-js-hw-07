@@ -41,9 +41,7 @@
 
 const inputValue = document.querySelector("input");
 const createBtn = inputValue.nextElementSibling;
-  // document.querySelector("#controls").children[1];
 const destroyBtn = createBtn.nextElementSibling;
-  // document.querySelector("#controls").children[2];
 const addElements = document.querySelector("#boxes")
 
 createBtn.addEventListener("click", createMarkup);
@@ -51,8 +49,8 @@ destroyBtn.addEventListener("click", destroyBoxes);
 
 function createMarkup() {
   const elemNumber = inputValue.value;
-  if (elemNumber < 0 || elemNumber > 100) {
-    console.log('Wrong number of elements!');
+  if (elemNumber < 1 || elemNumber > 100) {
+    alert('Wrong number of elements!');
     return;
   }
   addElements.innerHTML = createBoxes(elemNumber);

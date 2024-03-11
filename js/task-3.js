@@ -23,8 +23,8 @@ const spanElem = document.querySelector("#name-output");
 inputElem.addEventListener("input", handleInput)
 
 function handleInput(event) {
-    console.log(event.target.value);
-    if (!event.target.value || event.target.value.includes(" ")) {
+    console.log(event.target.value.trim());
+    if (!event.target.value.trim()) {
         spanElem.textContent = "Anonymous";
     }
     else {
@@ -32,5 +32,3 @@ function handleInput(event) {
     }
 }
 
-
-// console.dir(inputElem);

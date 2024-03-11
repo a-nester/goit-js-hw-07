@@ -32,12 +32,12 @@ function handleSubmit(event) {
     event.preventDefault();
     const values = event.currentTarget.elements;
     if (!values.email.value || !values.password.value) {
-        console.log('All form fields must be filled in');
+        alert('All form fields must be filled in');
         return;
     }
     const resultObj = {
-        email: values.email.value,
-        password: values.password.value
+        email: values.email.value.trim(),
+        password: values.password.value.trim()
     }
     console.log(resultObj);
     event.currentTarget.reset();
